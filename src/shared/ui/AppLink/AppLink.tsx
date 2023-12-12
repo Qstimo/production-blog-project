@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from 'react';
-import { classNames } from 'helpers/classNames/classNames';
+import { classNames } from 'helpers/classNames/classNames/classNames';
 import { Link, LinkProps } from 'react-router-dom';
 import cls from './AppLink.module.scss';
 
