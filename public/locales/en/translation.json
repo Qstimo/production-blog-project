@@ -1,5 +1,8 @@
 {
     "Текстовый пример":"Text example",
     "Язык":"English",
-    "Главная страница":"Main page"
+    "Главная страница":"Main page",
+    "Прозошла непредвиденная ошибка":"An unexpected error occurred",
+    "Обновить странницу":"Refresh the page",
+    "Страница не найдена":"Page not found"
 }

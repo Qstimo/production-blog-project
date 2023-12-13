@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { FC, useMemo } from 'react';
 import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from '../lib/ThemeContext';
 

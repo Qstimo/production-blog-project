@@ -36,6 +36,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
                 loader: 'css-loader',
                 options: {
                     modules: {
+                        // eslint-disable-next-line max-len
                         auto: (resPath: string) => Boolean(resPath.includes('.module.')),
                         localIdentName: isDev
                             ? '[path][name]__[local]--[hash:base64:5]'
@@ -46,7 +47,6 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
             'sass-loader',
         ],
     };
-
 
     const typescriptLoader = {
         test: /\.tsx?$/,

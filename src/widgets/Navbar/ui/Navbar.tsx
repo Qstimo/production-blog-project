@@ -2,7 +2,7 @@ import { classNames } from 'helpers/classNames/classNames/classNames';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
 import cls from './Navbar.module.scss';
 
-interface  NavbarProps {
+interface NavbarProps {
     className?: string
 }
 
