@@ -1,7 +1,9 @@
+/* eslint-disable max-len */
 import path from 'path';
 import HTMLWebpackPlugin from 'html-webpack-plugin';
 import webpack from 'webpack';
 import MiniCssExtractorPlugin from 'mini-css-extract-plugin';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { BuildOptions } from './types/config';
 
 export function buildPlagins({ paths, isDev }:BuildOptions):webpack.WebpackPluginInstance[] {
@@ -18,5 +20,8 @@ export function buildPlagins({ paths, isDev }:BuildOptions):webpack.WebpackPlugi
             __IS_DEV__: JSON.stringify(isDev),
         }),
         new webpack.HotModuleReplacementPlugin(),
+        new BundleAnalyzerPlugin({
+            openAnalyzer: false,
+        }),
     ];
 }
