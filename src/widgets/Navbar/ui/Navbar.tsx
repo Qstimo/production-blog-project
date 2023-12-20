@@ -1,5 +1,6 @@
-import { classNames } from 'helpers/classNames/classNames/classNames';
-import { AppLink } from 'shared/ui/AppLink/AppLink';
+import React from 'react';
+import { classNames } from '../../../helpers/classNames/classNames/classNames';
+import { AppLink } from '../../../shared/ui/AppLink/AppLink';
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {
