@@ -4,7 +4,6 @@ import { Theme } from '../../app/providers/ThemeProvider/lib/ThemeContext';
 import { ThemeDecorator } from '../../../config/storybook/StyleDecorators/ThemeDecorator';
 import { Loader } from './Loader';
 
-
 const meta = {
     title: 'widgets/Loader',
     component: Loader,
