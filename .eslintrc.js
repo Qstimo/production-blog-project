@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 module.exports = {
     env: {
         browser: true,

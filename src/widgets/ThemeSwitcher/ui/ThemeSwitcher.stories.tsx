@@ -4,6 +4,7 @@ import { Theme } from '../../../app/providers/ThemeProvider/lib/ThemeContext';
 import { ThemeDecorator } from '../../../../config/storybook/StyleDecorators/ThemeDecorator';
 import { ThemeSwitcher } from './ThemeSwitcher';
 
+
 const meta = {
     title: 'widgets/ThemeSwitcher',
     component: ThemeSwitcher,
