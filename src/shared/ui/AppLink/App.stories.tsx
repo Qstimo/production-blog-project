@@ -11,6 +11,9 @@ const meta = {
 
     },
     tags: ['autodocs'],
+    args: {
+        to: '/',
+    },
 
 } satisfies Meta<typeof AppLink>;
 
@@ -19,6 +22,7 @@ type Story = StoryObj<typeof meta>;
 
 export const PRIMARY: Story = {
     args: {
+
         children: 'link',
         theme: AppLinkTheme.PRIMARY,
     },
