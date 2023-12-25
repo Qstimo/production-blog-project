@@ -13,7 +13,7 @@ const meta = {
     tags: ['autodocs'],
     args: {
         to: '/',
-    },
+    }
 
 } satisfies Meta<typeof AppLink>;
 
