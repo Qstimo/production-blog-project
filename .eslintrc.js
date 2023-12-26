@@ -42,6 +42,7 @@ module.exports = {
             markupOnly: true,
             ignoreAttribute: ['data-testId', 'to'],
         }],
+        'jsx-a11y/click-events-have-key-events': 'off',
         'max-len': ['error', { ignoreComments: true, code: 120 }],
         'linebreak-style': ['error', 'windows'],
     },
