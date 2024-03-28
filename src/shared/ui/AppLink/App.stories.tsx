@@ -5,15 +5,15 @@ import { ThemeDecorator } from '../../../../config/storybook/StyleDecorators/The
 import { AppLink, AppLinkTheme } from './AppLink';
 
 const meta = {
-    title: 'shared/AppLink',
-    component: AppLink,
-    parameters: {
+  title: 'shared/AppLink',
+  component: AppLink,
+  parameters: {
 
-    },
-    tags: ['autodocs'],
-    args: {
-        to: '/',
-    },
+  },
+  tags: ['autodocs'],
+  args: {
+    to: '/',
+  },
 
 } satisfies Meta<typeof AppLink>;
 
@@ -21,20 +21,20 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const PRIMARY: Story = {
-    args: {
+  args: {
 
-        children: 'link',
-        theme: AppLinkTheme.PRIMARY,
-    },
-    decorators: ThemeDecorator(Theme.LIGHT),
+    children: 'link',
+    theme: AppLinkTheme.PRIMARY,
+  },
+  decorators: ThemeDecorator(Theme.LIGHT),
 
 };
 export const SECONDARY: Story = {
-    args: {
-        children: 'link',
-        theme: AppLinkTheme.SECONDARY,
+  args: {
+    children: 'link',
+    theme: AppLinkTheme.SECONDARY,
 
-    },
-    decorators: ThemeDecorator(Theme.DARK),
+  },
+  decorators: ThemeDecorator(Theme.DARK),
 
 };

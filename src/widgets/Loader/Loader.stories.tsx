@@ -5,26 +5,21 @@ import { ThemeDecorator } from '../../../config/storybook/StyleDecorators/ThemeD
 import { Loader } from './Loader';
 
 const meta = {
-    title: 'widgets/Loader',
-    component: Loader,
-    parameters: {
-    },
-    tags: ['autodocs'],
-
+  title: 'widgets/Loader',
+  component: Loader,
+  parameters: {},
+  tags: ['autodocs'],
 } satisfies Meta<typeof Loader>;
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
 export const Light: Story = {
-    args: {
-    },
-    decorators: ThemeDecorator(Theme.LIGHT),
-
+  args: {},
+  decorators: ThemeDecorator(Theme.LIGHT),
 };
 export const Dark: Story = {
-    args: {
-    },
-    decorators: ThemeDecorator(Theme.DARK),
-
+  args: {},
+  decorators: ThemeDecorator(Theme.DARK),
 };

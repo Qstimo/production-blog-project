@@ -7,15 +7,18 @@ import { ErrorBoundary } from './app/providers/ErrorBoundaries';
 // eslint-disable-next-line import/order
 import React from 'react';
 import './app/styles/index.scss';
+import { StoreProvider } from 'app/providers/StoreProvider';
 
 render(
+  <StoreProvider>
     <BrowserRouter>
-        <ErrorBoundary>
-            <ThemeProvider>
-                <App />
-            </ThemeProvider>
-        </ErrorBoundary>
-    </BrowserRouter>,
+      <ErrorBoundary>
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
+      </ErrorBoundary>
+    </BrowserRouter>
+  </StoreProvider>,
 
-    document.getElementById('root'),
+  document.getElementById('root'),
 );

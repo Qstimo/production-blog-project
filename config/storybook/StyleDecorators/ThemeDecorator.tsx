@@ -5,13 +5,13 @@ import { BrowserRouter } from 'react-router-dom';
 //  @ts-ignore for all file
 
 export const ThemeDecorator = (theme: Theme) => [
-    (Story: StoryFn) => (
-        <BrowserRouter>
-            <div className={`app ${theme}`}>
-                <div className="content-page">
-                    <Story />
-                </div>
-            </div>
-        </BrowserRouter>
-    ),
+  (Story: StoryFn) => (
+      <BrowserRouter>
+        <div className={`app ${theme}`}>
+          <div className="content-page">
+            <Story />
+        </div>
+      </div>
+    </BrowserRouter>
+  ),
 ];
