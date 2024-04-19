@@ -3,6 +3,7 @@ import React, { ReactNode } from 'react';
 import { classNames } from 'helpers/classNames/classNames/classNames';
 import cls from './Modal.module.scss';
 import { Portal } from '../Portal/Portal';
+import { useTheme } from 'app/providers/ThemeProvider';
 
 interface ModalProps {
     className?: string,
@@ -53,9 +54,11 @@ export const Modal = ({
     };
   }, [isOpen, onKeyDown]);
 
+  const {theme} = useTheme()
+
   return (
       <Portal>
-        <div className={classNames(cls.Modal, mods, [className])}>
+        <div className={classNames(cls.Modal, mods, [className,'app_modal', theme])}>
           <div
             className={cls.overlay}
             onClick={closeHandler}
